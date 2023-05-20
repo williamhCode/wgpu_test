@@ -1,0 +1,13 @@
+warning: field `vertex_buffer` is never read
+  --> src/lib.rs:38:5
+   |
+30 | struct State {
+   |        ----- field in this struct
+...
+38 |     vertex_buffer: wgpu::Buffer,
+   |     ^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: `wgpu_test` (lib) generated 1 warning
+    Finished dev [unoptimized + debuginfo] target(s) in 0.09s
